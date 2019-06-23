@@ -1,89 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Matt Sichterman's Portfolio</title>
-    <link rel="stylesheet" href="https://use.typekit.net/suz0kun.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="hamburger.css" rel="stylesheet">
-</head>
-<body>
-    <nav id="navbar">
+    <link rel="stylesheet" href="https://use.typekit.net/suz0kun.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="hamburger.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <nav id="navbar">
         <div id="nav-container">
-            <img id="top-logo" src="img/SICHOLOGOALT.svg" alt="S Logo"/>
-            <div id="links">
-                <a href=""><span class="top-link">About</span></a>
-                <a href=""><span class="top-link">Skills</span></a>
-                <a href=""><span class="top-link">Projects</span></a>
-                <a href=""><span class="top-link">Contact</span></a>                 
-            </div>
-            <button class="hamburger hamburger--vortex" id="hamburger" type="button">
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-            </button>
+          <img id="top-logo" src="img/SICHOLOGOALT.svg" alt="S Logo" />
+          <div id="links">
+            <a href=""><span class="top-link">About</span></a>
+            <a href=""><span class="top-link">Skills</span></a>
+            <a href=""><span class="top-link">Projects</span></a>
+            <a href=""><span class="top-link">Contact</span></a>
+          </div>
+          <button
+            class="hamburger hamburger--vortex"
+            id="hamburger"
+            type="button"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
-    </nav>
+      </nav>
 
-    <section id="welcome-section">
+      <section id="welcome-section">
         <h1>Software Engineer. Football Player. Dreamer.</h1>
-        <p>I balance a hectic schedule as a Student-Athlete, and wouldn't want it any other way!</p>
-        <img src="img/Headshot.svg" alt="Headshot of Matt" id="headshot">
-    </section>
+        <p>
+          I balance a hectic schedule as a Student-Athlete, and wouldn't want it
+          any other way!
+        </p>
+        <img src="img/Headshot.svg" alt="Headshot of Matt" id="headshot" />
+      </section>
 
-    <section id="about-me">
+      <section id="about-me">
         <div id="intro">
-            <h2>Hello, my name is Matt Sichterman!</h2>
-            <p>I am a junior at the University of Nebraska-Lincoln studying
-                    Software Engineering. I am also an offensive lineman on the
-                    football team. When I am not working out on the field or in the
-                    weight room, I am working hard to better myself as a developer.</p>
+          <h2>Hello, my name is Matt Sichterman!</h2>
+          <p>
+            I am a junior at the University of Nebraska-Lincoln studying
+            Software Engineering. I am also an offensive lineman on the football
+            team. When I am not working out on the field or in the weight room,
+            I am working hard to better myself as a developer.
+          </p>
         </div>
         <div id="coding-back-container">
-                    <img src="img/CodingAtDeskBack.svg" alt="Coding at desk" id="coding-back">
+          <img
+            src="img/CodingAtDeskBack.svg"
+            alt="Coding at desk"
+            id="coding-back"
+          />
         </div>
-    </section>
-    <section id="skills">
+      </section>
+      <section id="skills">
         <div id="skills-container">
-            <div class="skills-column">
-                <img class="skill-icon" src="img/codeScreen.svg" alt="Code on a screen icon"/>
-                <h2 class="column-heading">Languages I Speak</h2>
-                <p class="tech-name">HTML</p>
-                <p class="tech-name">CSS</p>
-                <p class="tech-name">JavaScript</p>
-                <p class="tech-name">Java</p>
-                <p class="tech-name">Python</p>
+          <div class="skills-column">
+            <img
+              class="skill-icon"
+              src="img/codeScreen.svg"
+              alt="Code on a screen icon"
+            />
+            <h2 class="column-heading">Languages I Speak</h2>
+            <p class="tech-name">HTML</p>
+            <p class="tech-name">CSS</p>
+            <p class="tech-name">JavaScript</p>
+            <p class="tech-name">Java</p>
+            <p class="tech-name">Python</p>
+          </div>
+          <div class="skills-column">
+            <img
+              class="skill-icon"
+              id="tools"
+              src="img/tools.svg"
+              alt="Tools icon"
+            />
+            <div id="tools-content">
+              <h2 class="column-heading">Tools</h2>
+              <p class="tech-name">VSCode</p>
+              <p class="tech-name">GitHub</p>
+              <p class="tech-name">GitLab</p>
+              <p class="tech-name">CodePen</p>
+              <p class="tech-name">Terminal</p>
+              <p class="tech-name">Figma</p>
             </div>
-            <div class="skills-column">
-                <img class="skill-icon" id="tools" src="img/tools.svg" alt="Tools icon"/>
-                <div id="tools-content">
-                    <h2 class="column-heading">Tools</h2>
-                    <p class="tech-name">VSCode</p>
-                    <p class="tech-name">GitHub</p>
-                    <p class="tech-name">GitLab</p>
-                    <p class="tech-name">CodePen</p>
-                    <p class="tech-name">Terminal</p>
-                    <p class="tech-name">Figma</p> 
-                </div>
-            </div>
-            <div class="skills-column">
-                <img class="skill-icon" id="handshake" src="img/handshake.svg" alt="A handshake icon"/>
-                <h2 class="column-heading">Soft Skills</h2>
-                <p class="tech-name">Leadership</p>
-                <p class="tech-name">Teamwork</p>
-                <p class="tech-name">Communication</p>
-                <p class="tech-name">Time Management</p>
-                <p class="tech-name">Work Ethic</p>
-            </div>
+          </div>
+          <div class="skills-column">
+            <img
+              class="skill-icon"
+              id="handshake"
+              src="img/handshake.svg"
+              alt="A handshake icon"
+            />
+            <h2 class="column-heading">Soft Skills</h2>
+            <p class="tech-name">Leadership</p>
+            <p class="tech-name">Teamwork</p>
+            <p class="tech-name">Communication</p>
+            <p class="tech-name">Time Management</p>
+            <p class="tech-name">Work Ethic</p>
+          </div>
         </div>
-    </section>
-    <section id="projects">
-        <div class="project-tile"></div>
-        <a href=""></a>
-        <a href="https://github.com/msichterman/" id="profile-link"></a>
-    </section>   
-    <script type="text/javascript" src="main.js"></script> 
-</body>
+      </section>
+      <section id="projects">
+        <h2 id="project-heading">My Projects</h2>
+        <p>Check out what I made! And stay tuned, more is on the way.</p>
+        <div id="tile-wrapper">
+          <div class="project-desc">
+            <div class="project-tile">
+              <h3 class="project-name">Developer Tricks</h3>
+            </div>
+            <p class="desc">
+              A “technical documentation” site to store all the tricks I find
+              useful while coding.
+            </p>
+
+            <div class="desc-links">
+              <a class="desc-link blue-link" target="_blank" href="https://github.com/msichterman/developer-tricks"
+                ><span class="desc-bg git"><i class="fab fa-github"></i></span
+              ></a>
+              <a class="desc-link red-link" target="_blank" href="https://msichterman.github.io/developer-tricks/"
+                ><span class="desc-bg"><i class="fas fa-link"></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="project-desc">
+            <div class="project-tile">
+              <h3 class="project-name">SICHO Freelance</h3>
+            </div>
+            <p class="desc">
+              A “product page” site used to promote SICHO Web Freelance.
+            </p>
+            <div class="desc-links">
+              <a class="desc-link blue-link" target="_blank" href="https://github.com/msichterman/sicho-freelance"
+                ><span class="desc-bg git"><i class="fab fa-github"></i></span
+              ></a>
+              <a class="desc-link red-link" target="_blank" href="https://msichterman.github.io/sicho-freelance/"
+                ><span class="desc-bg"><i class="fas fa-link"></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="project-desc">
+            <div class="project-tile">
+              <h3 class="project-name">(Coming Soon)</h3>
+            </div>
+            <p class="desc">
+              A project that has not yet been created, and is in the works.
+            </p>
+            <div class="desc-links">
+              <a class="desc-link blue-link"
+                ><span class="desc-bg git"><i class="fab fa-github"></i></span
+              ></a>
+              <a class="desc-link red-link"
+                ><span class="desc-bg"><i class="fas fa-link"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <img
+          id="coding-front"
+          src="img/CodingAtDeskFront.svg"
+          alt="Coding at desk illustration"
+        />
+        <div id="contact-container">
+          <div id="contact-desc">
+            <h2>Get in Touch</h2>
+            <p>
+              Like what you see? Let’s get to talkin’! I am currently open to
+              all opportunities!
+            </p>
+          </div>
+          <div id="form-container">
+            <form
+              method="POST"
+              action="https://formspree.io/msichterman1@gmail.com"
+            >
+              <input type="text" name="name" placeholder="Name" /><br />
+              <input type="email" name="email" placeholder="Email" /><br />
+              <textarea name="message" placeholder="Message"></textarea><br />
+              <div id="button-container">
+                <button id="submit" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>"Have a desire to excel and no fear of failure." - Coach Scott Frost</p>
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/msichterman">
+              <div class="footer-icon">
+                <i class="fab fa-github"></i>
+                <p class="link-title">GitHub</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://codepen.io/msichterman/">
+              <div class="footer-icon">
+                <i class="fab fa-codepen"></i>
+                <p class="link-title">CodePen</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://twitter.com/mattsichterman?lang=en"
+            >
+              <div class="footer-icon">
+                <i class="fab fa-twitter"></i>
+                <p class="link-title">Twitter</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/msichterman/">
+              <div class="footer-icon">
+                <i class="fab fa-linkedin"></i>
+                <p class="link-title">LinkedIn</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <span>© 2019 Matt Sichterman</span>
+      </footer>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
