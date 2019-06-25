@@ -201,7 +201,6 @@ a {
   }
   #skills-container {
     top: 0px;
-   
   }
 }
 
@@ -343,7 +342,7 @@ a {
   justify-content: space-around;
   text-align: center;
   width: 400px;
-  height: 100px;;
+  height: 100px;
 }
 
 .desc-bg {
@@ -355,7 +354,8 @@ a {
   border-radius: 50px;
 }
 
-.fas, .fab {
+.fas,
+.fab {
   font-size: 25px;
   font-weight: 200;
   margin-top: 30px;
@@ -372,24 +372,24 @@ i.fa-github {
 
 .desc-bg:hover {
   background-color: #e41c38;
-  transition: background-color .4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
-.desc-bg:hover > .fas, .fab{
-  color: #fff;
-  transition: color .4s ease-in-out;
-}
-
-.git:hover {
-  background-color: #001a33;
-  transition: background-color .4s ease-in-out;
-}
-
-.git:hover > i.fa-github{
+.desc-bg:hover > .fas,
+.fab {
   color: #fff;
   transition: color 0.4s ease-in-out;
 }
 
+.git:hover {
+  background-color: #001a33;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.git:hover > i.fa-github {
+  color: #fff;
+  transition: color 0.4s ease-in-out;
+}
 
 #coding-front {
   display: block;
@@ -406,7 +406,12 @@ i.fa-github {
 #contact {
   display: block;
   position: relative;
-  background: repeating-linear-gradient(#fff, #fff 49.99999%, #e41c38 50.00001%, #e41c38 100%);
+  background: repeating-linear-gradient(
+    #fff,
+    #fff 49.99999%,
+    #e41c38 50.00001%,
+    #e41c38 100%
+  );
 }
 
 #contact-container {
@@ -465,7 +470,6 @@ i.fa-github {
   font-size: 20px;
 }
 
-
 #form-container {
   display: flex;
   flex-direction: column;
@@ -475,7 +479,9 @@ i.fa-github {
   width: 50%;
 }
 
-form > input, textarea, button {
+form > input,
+textarea,
+button {
   font-family: soleto, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -519,7 +525,7 @@ textarea:focus {
   position: relative;
 }
 
-#submit:hover{
+#submit:hover {
   background-color: #e41c38;
   transition: all 0.4s ease-in-out;
 }
@@ -527,7 +533,6 @@ textarea:focus {
 #submit:focus {
   outline: none;
 }
-
 
 footer {
   position: relative;
@@ -546,7 +551,7 @@ footer > p {
   color: #fff;
   text-align: center;
   font-size: 20px;
-  font-weight: 500
+  font-weight: 500;
 }
 
 footer > ul {
@@ -554,7 +559,7 @@ footer > ul {
   position: relative;
   justify-content: center;
   align-items: center;
-  top: -80px;;
+  top: -80px;
 }
 footer li {
   padding: 5px 20px;
@@ -632,12 +637,17 @@ div.loading {
 }
 
 @keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 .loading.loaded {
+  
   opacity: 0;
   transition: opacity 1s ease-out;
+  z-index: -99999;
 }
-
