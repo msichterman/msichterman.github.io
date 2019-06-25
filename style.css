@@ -2,6 +2,11 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.scroll-off {
+  overflow-y: hidden;
 }
 
 * {
@@ -592,3 +597,47 @@ footer span {
   font-family: soleto, sans-serif;
   font-weight: 500;
 }
+
+/* Full Page Loader */
+
+div.loading {
+  opacity: 1;
+  position: fixed;
+  z-index: 99998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #001a33;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.loading.spinner {
+  opacity: 1;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #fff; /* Light grey */
+  border-top: 10px solid #e41c38; /* Red */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1.5s ease-in-out infinite;
+  animation: spin 1.5s ease-in-out infinite;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+@keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+.loading.loaded {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
