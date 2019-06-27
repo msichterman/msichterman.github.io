@@ -107,16 +107,19 @@ a {
 }
 
 #headshot {
-  width: 300px;
-  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 30vw;
+  min-width: 300px;
   height: auto;
   z-index: 2;
+  background-color: none;
 }
 
 #about-me {
   background-color: #e41c38;
   min-height: 800px;
-  z-index: 3;
+  z-index: 10;
 }
 
 #intro {
