@@ -349,6 +349,12 @@ a {
   top: -140px;
 }
 
+@media (min-width: 1250px) {
+  #projects {
+    top: -40px;
+  }
+}
+
 @media (max-width: 722px) {
   #projects {
     top: -100px;
@@ -509,6 +515,12 @@ i.fa-github {
   align-items: center;
   justify-content: center;
   padding: 25px;
+}
+
+@media (min-width: 1250px) {
+  #contact {
+    margin-top: 136px;
+  }
 }
 
 @media (max-width: 900px) {
