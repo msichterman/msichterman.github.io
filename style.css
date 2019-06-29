@@ -83,6 +83,63 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
+.expandable-menu {
+  display: none;
+  z-index: 9;
+  position: absolute;
+  top: 55px;
+  right: 5vw;
+  text-align: center;
+  background-color: #001a33;
+  width: 40vw;
+  height: 350px;
+  text-decoration: none;
+  padding: 20px 0;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.show {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .show {
+    display: none;
+  }
+}
+
+.expandable-menu > ul {
+  display: block;
+  height: 250px;
+  padding-top: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.menu-item {
+  width: 80%;
+  color: #fff;
+  margin: 30px auto;
+  padding: 10px 0 12px 0;
+  border-radius: 50px;
+  font-family: soleto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu-item:hover {
+  background-color: #e41c38;
+  transition: background-color 0.4s ease-in-out;
+}
+
+
+/* ------------------------------------------------- */
+
+/* Welcome Section */
 #welcome-section {
   position: relative;
   width: 100%;
@@ -212,7 +269,9 @@ a {
   display: block;
   position: relative;
 }
+/* ------------------------------------------------- */
 
+/* Skills Section */
 #skills-container {
   display: flex;
   position: relative;
@@ -229,6 +288,8 @@ a {
   position: relative;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 250px;
   min-width: 250px;
   height: 550px;
@@ -272,11 +333,19 @@ a {
   position: relative;
   top: -180px;
 }
+/* ------------------------------------------------- */
 
+/* Projects Section */
 #projects {
   display: block;
   position: relative;
-  top: -100px;
+  top: -140px;
+}
+
+@media (max-width: 722px) {
+  #projects {
+    top: -100px;
+  }
 }
 
 #projects > h2 {
@@ -304,6 +373,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 .project-tile {
@@ -394,7 +464,9 @@ i.fa-github {
   color: #fff;
   transition: color 0.4s ease-in-out;
 }
+/* ------------------------------------------------- */
 
+/* Contact Section */
 #coding-front {
   display: block;
   position: relative;
@@ -539,7 +611,9 @@ textarea:focus {
 #submit:focus {
   outline: none;
 }
+/* ------------------------------------------------- */
 
+/* Footer */
 footer {
   position: relative;
   background-color: #e41c38;
@@ -553,7 +627,7 @@ footer > p {
   position: relative;
   align-items: center;
   justify-content: center;
-  top: -100px;
+  top: -90px;
   color: #fff;
   text-align: center;
   font-size: 20px;
@@ -565,10 +639,10 @@ footer > ul {
   position: relative;
   justify-content: center;
   align-items: center;
-  top: -80px;
+  top: -70px;
 }
 footer li {
-  padding: 5px 20px;
+  padding: 5px 3vw;
   list-style: none;
   font-family: soleto, sans-serif;
   font-weight: 500;
@@ -609,7 +683,7 @@ footer span {
   font-weight: 500;
   margin: 0;
 }
-
+/* ------------------------------------------------- */
 
 /* Full Page Loader */
 
@@ -655,8 +729,8 @@ div.loading {
 }
 
 .loading.loaded {
-  
   opacity: 0;
   transition: opacity 1s ease-out;
   z-index: -99999;
 }
+/* ------------------------------------------------- */
