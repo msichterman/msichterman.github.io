@@ -27,6 +27,7 @@ p {
   font-family: soleto, sans-serif;
   font-weight: 300;
   font-style: normal;
+  margin: 0 8vw;
 }
 
 a {
@@ -498,11 +499,13 @@ button {
 
 form > input {
   height: 26px;
-  width: 300px;
+  max-width: 300px;
+  min-width: 260px;
 }
 
 form > textarea {
-  width: 300px;
+  max-width: 300px;
+  min-width: 260px;
   height: 200px;
   resize: none;
   padding-top: 5px;
@@ -604,7 +607,9 @@ footer span {
 .link-title {
   font-family: soleto, sans-serif;
   font-weight: 500;
+  margin: 0;
 }
+
 
 /* Full Page Loader */
 
