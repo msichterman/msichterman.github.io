@@ -722,9 +722,11 @@ footer span {
 /* ------------------------------------------------- */
 
 /* Full Page Loader */
-div.loading {
+.loader-container {
   opacity: 1;
-  position: fixed;
+  position: fixed; 
+  left: 0;
+  top: 0;
   z-index: 99998;
   display: flex;
   justify-content: center;
@@ -738,8 +740,10 @@ div.loading {
 }
 
 .loading.spinner {
+  display: flex;
   opacity: 1;
   position: fixed;
+  margin: 0 auto;
   z-index: 99999;
   width: 100%;
   height: 100%;
@@ -750,8 +754,6 @@ div.loading {
   height: 50px;
   -webkit-animation: spin 1.5s ease-in-out infinite;
   animation: spin 1.5s ease-in-out infinite;
-  overflow: auto;
-  overflow-y: hidden;
 }
 
 @keyframes spin {
