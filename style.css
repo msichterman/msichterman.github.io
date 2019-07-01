@@ -735,11 +735,10 @@ footer span {
   height: 100%;
   height: 100vh;
   background-color: #001a33;
-  overflow: auto;
   overflow-y: hidden;
 }
 
-.loading.spinner {
+.spinner {
   display: flex;
   opacity: 1;
   position: fixed;
