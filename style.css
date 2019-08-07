@@ -385,7 +385,7 @@ a {
   position: relative;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
   margin-bottom: 30px;
 }
