@@ -400,7 +400,7 @@ a {
   align-items: center;
   justify-content: center;
   height: 60px;
-  width: 250px;
+  width: 274px;
   background-color: #e41c38;
   color: #fff;
   border-radius: 15px 15px 0 0px;
@@ -426,6 +426,7 @@ a {
 .desc {
   color: #001a33;
   margin: 10px 0 0 0 !important;
+  padding: 0 10px;
 }
 
 .project-desc > p {
