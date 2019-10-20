@@ -7,7 +7,12 @@ body {
 }
 
 body {
-  background: repeating-linear-gradient(#fff, #fff 89.99999%, #e41c38 90%, #e41c38 100%);
+  background: repeating-linear-gradient(
+    #fff,
+    #fff 89.99999%,
+    #e41c38 90%,
+    #e41c38 100%
+  );
 }
 
 .scroll-off {
@@ -140,7 +145,6 @@ a {
   background-color: #e41c38;
   transition: background-color 0.4s ease-in-out;
 }
-
 
 /* ------------------------------------------------- */
 
@@ -395,13 +399,17 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 60px;
   width: 250px;
-  border: 2px solid #001a33;
-  color: #001a33;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  background-color: #e41c38;
+  color: #fff;
+  border-radius: 15px 15px 0 0px;
   font-size: 20px;
+}
+
+.project-name {
+  font-size: 20px;
+  padding: 8px;
 }
 
 .project-desc {
@@ -410,10 +418,14 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  margin: 0 10px 20px 10px;
+  border: 2px solid #e41c38;
+  border-radius: 18px 18px 15px 15px;
 }
 
 .desc {
   color: #001a33;
+  margin: 10px 0 0 0 !important;
 }
 
 .project-desc > p {
@@ -429,8 +441,8 @@ a {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  width: 400px;
-  height: 100px;
+  width: 250px;
+  height: 85px;
 }
 
 .desc-bg {
@@ -524,6 +536,13 @@ i.fa-github {
   }
 }
 
+@media (max-width: 950px) {
+  #coding-back {
+    left: 0px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 900px) {
   #contact-container {
     flex-direction: column;
@@ -536,11 +555,6 @@ i.fa-github {
   }
 
   #coding-front {
-    left: 0px;
-    margin: 0 auto;
-  }
-
-  #coding-back {
     left: 0px;
     margin: 0 auto;
   }
@@ -725,7 +739,7 @@ footer span {
 /* Full Page Loader */
 .loader-container {
   opacity: 1;
-  position: fixed; 
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 99998;
