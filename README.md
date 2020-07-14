@@ -1,4 +1,4 @@
-# Portfolio
+# Legacy Portfolio
 A personal portfolio website intended to showcase information about me, skills, projects and a simple way to contact me!
 
 Check out the live site [here](https://msichterman.github.io/)!
